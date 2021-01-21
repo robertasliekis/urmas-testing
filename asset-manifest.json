@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/urmas-testing/static/css/main.b0bf4966.chunk.css",
-    "main.js": "/urmas-testing/static/js/main.137178aa.chunk.js",
-    "main.js.map": "/urmas-testing/static/js/main.137178aa.chunk.js.map",
-    "runtime-main.js": "/urmas-testing/static/js/runtime-main.2758b3ad.js",
-    "runtime-main.js.map": "/urmas-testing/static/js/runtime-main.2758b3ad.js.map",
-    "static/js/2.09083b14.chunk.js": "/urmas-testing/static/js/2.09083b14.chunk.js",
-    "static/js/2.09083b14.chunk.js.map": "/urmas-testing/static/js/2.09083b14.chunk.js.map",
-    "static/js/3.0e6275f2.chunk.js": "/urmas-testing/static/js/3.0e6275f2.chunk.js",
-    "static/js/3.0e6275f2.chunk.js.map": "/urmas-testing/static/js/3.0e6275f2.chunk.js.map",
+    "main.css": "/urmas-testing/static/css/main.177a828d.chunk.css",
+    "main.js": "/urmas-testing/static/js/main.5de55601.chunk.js",
+    "main.js.map": "/urmas-testing/static/js/main.5de55601.chunk.js.map",
+    "runtime-main.js": "/urmas-testing/static/js/runtime-main.b650b4d4.js",
+    "runtime-main.js.map": "/urmas-testing/static/js/runtime-main.b650b4d4.js.map",
+    "static/js/2.c30d00d8.chunk.js": "/urmas-testing/static/js/2.c30d00d8.chunk.js",
+    "static/js/2.c30d00d8.chunk.js.map": "/urmas-testing/static/js/2.c30d00d8.chunk.js.map",
+    "static/js/3.9a795e05.chunk.js": "/urmas-testing/static/js/3.9a795e05.chunk.js",
+    "static/js/3.9a795e05.chunk.js.map": "/urmas-testing/static/js/3.9a795e05.chunk.js.map",
     "index.html": "/urmas-testing/index.html",
-    "static/css/main.b0bf4966.chunk.css.map": "/urmas-testing/static/css/main.b0bf4966.chunk.css.map",
-    "static/js/2.09083b14.chunk.js.LICENSE.txt": "/urmas-testing/static/js/2.09083b14.chunk.js.LICENSE.txt",
+    "static/css/main.177a828d.chunk.css.map": "/urmas-testing/static/css/main.177a828d.chunk.css.map",
+    "static/js/2.c30d00d8.chunk.js.LICENSE.txt": "/urmas-testing/static/js/2.c30d00d8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/urmas-testing/static/media/hoftype__askan-webfont.c26f8311.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.2758b3ad.js",
-    "static/js/2.09083b14.chunk.js",
-    "static/css/main.b0bf4966.chunk.css",
-    "static/js/main.137178aa.chunk.js"
+    "static/js/runtime-main.b650b4d4.js",
+    "static/js/2.c30d00d8.chunk.js",
+    "static/css/main.177a828d.chunk.css",
+    "static/js/main.5de55601.chunk.js"
   ]
 }
