@@ -306,6 +306,8 @@ p {
 
 .buttons-container .page-count {
   margin: 0 10px;
+  color: var(--global-color-orange);
+  font-weight: 800;
 }
 
 .buttons-container .btn-left {
@@ -558,11 +560,31 @@ p {
           transform: translateX(5px);
 }
 
-.content-bottom {
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+.topics-container .info-window {
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  background-color: white;
+  padding: var(--padding-left);
+  padding-top: 60px;
+  -webkit-transition: 0.5s opacity ease, 0.6s z-index ease;
+  transition: 0.5s opacity ease, 0.6s z-index ease;
+}
+
+.topics-container .info-window .btn-close {
+  position: absolute;
+  padding: 10px;
+  border: 1px solid black;
+  right: 10px;
+  top: 10px;
+}
+
+.content-bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, white), color-stop(60%, rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, white 20%, rgba(255, 255, 255, 0.75) 60%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 130px;
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -578,13 +600,17 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 20px;
 }
 
 .content-bottom .btn-info {
   background-image: url("./images/Look info.png");
 }
 
-.info-window-container {
+.topic-window-container {
   background-color: white;
   width: 100%;
   position: absolute;
@@ -592,7 +618,7 @@ p {
   transition: 0.5s opacity ease, 0.6s z-index ease;
 }
 
-.info-window-container .content {
+.topic-window-container .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,7 +640,7 @@ p {
   width: 100%;
 }
 
-.info-window-container .content .title {
+.topic-window-container .content .title {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,7 +663,7 @@ p {
   color: white;
 }
 
-.info-window-container .content .title .btn-back {
+.topic-window-container .content .title .btn-back {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -648,7 +674,7 @@ p {
   left: 30px;
 }
 
-.info-window-container .content .info-header {
+.topic-window-container .content .info-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,14 +699,14 @@ p {
   padding: 0 30px;
 }
 
-.info-window-container .content .info-header .text {
+.topic-window-container .content .info-header .text {
   text-transform: uppercase;
   font-size: var(--font-size-mini);
   line-height: var(--font-size-mini);
   position: relative;
 }
 
-.info-window-container .content .info-header .text .line {
+.topic-window-container .content .info-header .text .line {
   position: absolute;
   -webkit-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
@@ -691,12 +717,12 @@ p {
   background-color: black;
 }
 
-.info-window-container .content .info-header .text:nth-child(1) {
+.topic-window-container .content .info-header .text:nth-child(1) {
   color: var(--global-color-orange);
   margin-bottom: 5px;
 }
 
-.info-window-container .content .info-header .text:nth-child(1) .line {
+.topic-window-container .content .info-header .text:nth-child(1) .line {
   background-color: var(--global-color-orange);
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
@@ -704,7 +730,7 @@ p {
   left: -5px;
 }
 
-.info-window-container .content .info-wrapper {
+.topic-window-container .content .info-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +753,7 @@ p {
   overflow-x: scroll;
 }
 
-.info-window-container .content .info-wrapper .info-container {
+.topic-window-container .content .info-wrapper .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,7 +781,7 @@ p {
   width: 100%;
 }
 
-.info-window-container .content .info-wrapper .info-container .stamp-image {
+.topic-window-container .content .info-wrapper .info-container .stamp-image {
   position: absolute;
   bottom: 20px;
   right: var(--padding-left);

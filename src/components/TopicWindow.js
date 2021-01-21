@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { openTopicWindow } from "../actions";
 
 function TopicWindow(props) {
+  const pagesCount = 4;
+
+  const [infoCarouselPosition, setInfoCarouselPosition] = useState(1);
+
   const buttonBackClicked = () => {
     let topicWindow = { topicWindowOpen: false };
     props.openTopicWindow(topicWindow);
+
+    setTimeout(function () {
+      setInfoCarouselPosition(1);
+    }, 700);
+  };
+
+  const infoCarouselClicked = (direction) => {
+    if ((direction === -1 && infoCarouselPosition !== 1) || (direction === 1 && infoCarouselPosition !== pagesCount)) {
+      setInfoCarouselPosition(infoCarouselPosition + direction);
+    }
   };
 
   return (
     <div
-      className="window-container info-window-container"
+      className="window-container topic-window-container"
       style={{ opacity: props.topicWindowOpen ? 1 : 0, zIndex: props.topicWindowOpen ? 5 : 1 }}
     >
       <div className="content">
@@ -52,11 +66,11 @@ function TopicWindow(props) {
         </div>
         <div className="content-bottom">
           <div className="buttons-container">
-            <div className="btn btn-left btn-round">
+            <div className="btn btn-left btn-round" onClick={() => infoCarouselClicked(-1)}>
               <div className="icon"></div>
             </div>
-            <div className="page-count">1/3</div>
-            <div className="btn btn-right btn-round">
+            <div className="page-count">{`${infoCarouselPosition}/${pagesCount}`}</div>
+            <div className="btn btn-right btn-round" onClick={() => infoCarouselClicked(1)}>
               <div className="icon"></div>
             </div>
           </div>

@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { startTour, openTopicWindow } from "../actions";
 import topics from "../data/topics";
 
 function TopicSelection(props) {
-  // const ()
+  const [infoWindowOpen, setInfoWindowOpen] = useState(false);
   const topicClicked = (index) => {
     let topicWindow = { topicWindowOpen: true, topicWindowIndex: index };
     props.openTopicWindow(topicWindow);
   };
 
-  const infoButtonClicked = () => {};
+  const infoButtonClicked = () => {
+    setInfoWindowOpen(!infoWindowOpen);
+  };
 
   return (
     <div className="window-container topics-container">
@@ -37,7 +39,20 @@ function TopicSelection(props) {
             <div className="icon"></div>
           </div>
         </div>
+
         <div className="ref-image" style={{ backgroundImage: `url("./images/ref2.jpg")` }}></div>
+      </div>
+      <div className="info-window" style={{ opacity: infoWindowOpen ? 1 : 0, zIndex: infoWindowOpen ? 5 : -1 }}>
+        <div className="btn btn-close" onClick={() => infoButtonClicked()}>
+          x
+        </div>
+        <p>INFO WINDOW</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eligendi quidem perferendis obcaecati reiciendis atque vel
+          nostrum laboriosam itaque sunt dolores iusto, perspiciatis tenetur provident, veniam animi repellat incidunt maxime blanditiis
+          nihil facere quia iste eaque voluptas. Dicta deserunt adipisci, animi voluptas debitis placeat doloremque repellat, quo nam
+          similique voluptatem?
+        </p>
       </div>
     </div>
   );
