@@ -1,0 +1,54 @@
+const topics = [
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  },
+  {
+    title: `STENDO TEMOS
+PAVADINIMAS`
+  },
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  },
+  {
+    title: `STENDO TEMOS
+PAVADINIMAS`
+  },
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  },
+  {
+    title: `STENDO TEMOS
+PAVADINIMAS`
+  },
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  },
+  {
+    title: `STENDO TEMOS
+PAVADINIMAS`
+  },
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  },
+  {
+    title: `STENDO TEMOS
+PAVADINIMAS`
+  },
+  {
+    title: `THE DEVELOPMENT OF
+DIPLOMATIC SERVICE,
+1915-1919`
+  }
+];
+
+export default topics;

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import Component1props from "./componentsOld/Component1props";
+// import Component2refs from "./componentsOld/Component2refs";
+// import Component3redux from "./componentsOld/Component3redux";
+// import Component4useEffect from "./componentsOld/Component4useEffect";
+
+import IntroWindow from "./components/IntroWindow";
+import TopicSelection from "./components/TopicSelection";
+import TopicWindow from "./components/TopicWindow";
 
 function App() {
+  //"homepage": "https://robertasliekis.github.io/urmas-testing/",
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="website-wrapper">
+      <IntroWindow />
+      <TopicSelection />
+      <TopicWindow />
+      {/* <Component1props />
+      <Component2refs />
+      <Component3redux />
+      <Component4useEffect /> */}
     </div>
   );
 }
