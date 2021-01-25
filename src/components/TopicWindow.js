@@ -37,7 +37,7 @@ function TopicWindow(props) {
         <div className="title">
           <p>Creative Centenary:</p>
           <p>100 years of Diplomatic Service of Lithuania</p>
-          <Link className="btn btn-back" onClick={() => buttonBackClicked()} to={"/"}></Link>
+          <Link className="btn btn-back" onClick={() => buttonBackClicked()} to={"/urmas-testing/"}></Link>
         </div>
         <div className="info-header">
           <div className="text">

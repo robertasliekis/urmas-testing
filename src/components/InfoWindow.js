@@ -36,7 +36,7 @@ function InfoWindow(props) {
         </div>
         <div className="ref-image" style={{ backgroundImage: `url("./images/ref.jpg")` }}></div>
       </div>
-      <Link className="btn btn-start" onClick={() => tourStartedClicked()} to={"/"}>
+      <Link className="btn btn-start" onClick={() => tourStartedClicked()} to={"/urmas-testing/"}>
         <div className="active-zone">
           tap to start <div className="line"></div>
         </div>
