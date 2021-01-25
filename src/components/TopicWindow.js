@@ -56,7 +56,7 @@ function TopicWindow(props) {
               {description[2] !== undefined ? (
                 <div
                   className="image"
-                  style={{ backgroundImage: `url("./photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")` }}
+                  style={{ backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")` }}
                 ></div>
               ) : null}
               {description[1] !== "" ? <p className="image-description">{description[1]}</p> : null}
