@@ -19,13 +19,15 @@ function App(props) {
     }
   }, [props]);
 
+  const websiteName = "/urmas-testing";
+
   return (
     <Router>
       <div className="website-wrapper">
         <Switch>
-          <Route exact path={"/"} component={TopicSelection} />
-          <Route path={`/${props.urlIndex}`} component={TopicWindow} />
-          <Route path={`/info`} component={InfoWindow} />
+          <Route exact path={`${websiteName}/`} component={TopicSelection} />
+          <Route path={`${websiteName}/${props.urlIndex}`} component={TopicWindow} />
+          <Route path={`${websiteName}/info`} component={InfoWindow} />
           <Route path="*" component={TopicSelection} />
         </Switch>
       </div>
