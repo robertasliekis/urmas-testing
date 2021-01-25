@@ -43,7 +43,7 @@ function TopicSelection(props) {
         </div>
 
         <div className="content-bottom">
-          <Link className="btn btn-round btn-info" onClick={() => infoButtonClicked()} to={"/info"}>
+          <Link className="btn btn-round btn-info" onClick={() => infoButtonClicked()} to={"/urmas-testing/info"}>
             <div className="icon"></div>
           </Link>
         </div>
