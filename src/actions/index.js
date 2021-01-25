@@ -1,6 +1,6 @@
-export const startTour = (bool) => {
+export const openInfoWindow = (bool) => {
   return {
-    type: "START_TOUR",
+    type: "OPEN_INFO_WINDOW",
     payload: bool
   };
 };

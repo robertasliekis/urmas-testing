@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { startTour, openTopicWindow } from "../actions";
-import topics from "../data/topics";
+import { openInfoWindow, openTopicWindow } from "../actions";
+import topics from "../data/topicsData";
 
 function TopicSelection(props) {
-  const [infoWindowOpen, setInfoWindowOpen] = useState(false);
   const topicClicked = (index) => {
-    let topicWindow = { topicWindowOpen: true, topicWindowIndex: index };
+    let topicWindow = { topicOpen: true, topicIndex: index, urlIndex: index + 1 };
     props.openTopicWindow(topicWindow);
   };
 
   const infoButtonClicked = () => {
-    setInfoWindowOpen(!infoWindowOpen);
+    //  props.openInfoWindow(true);
   };
 
   return (
     <div className="window-container topics-container">
       <div className="content">
-        <div className="title">Muziejaus pavadinimas</div>
+        <div className="title">
+          <p>Creative Centenary:</p>
+          <p>100 years of Diplomatic Service of Lithuania</p>
+        </div>
         <div className="topics-header">Choose topic</div>
         <div className="topics-list-wrapper">
           <div className="topics-list">
@@ -26,33 +30,25 @@ function TopicSelection(props) {
               <div className="icon"></div>
             </div>
             {topics.map((topic, index) => (
-              <div className="topic" key={index} onClick={() => topicClicked(index)}>
+              <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`/${index + 1}`}>
                 <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
-                <div className="topic-title">{topic.title}</div>
-              </div>
+                <div className="topic-title">{topic.topicTitle}</div>
+              </Link>
+              // <div className="topic" key={topic.id} onClick={() => topicClicked(index)}>
+              //   <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
+              //   <div className="topic-title">{topic.topicTitle}</div>
+              // </div>
             ))}
           </div>
         </div>
 
         <div className="content-bottom">
-          <div className="btn btn-round btn-info" onClick={() => infoButtonClicked()}>
+          <Link className="btn btn-round btn-info" onClick={() => infoButtonClicked()} to={"/info"}>
             <div className="icon"></div>
-          </div>
+          </Link>
         </div>
 
         <div className="ref-image" style={{ backgroundImage: `url("./images/ref2.jpg")` }}></div>
-      </div>
-      <div className="info-window" style={{ opacity: infoWindowOpen ? 1 : 0, zIndex: infoWindowOpen ? 5 : -1 }}>
-        <div className="btn btn-close" onClick={() => infoButtonClicked()}>
-          x
-        </div>
-        <p>INFO WINDOW</p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eligendi quidem perferendis obcaecati reiciendis atque vel
-          nostrum laboriosam itaque sunt dolores iusto, perspiciatis tenetur provident, veniam animi repellat incidunt maxime blanditiis
-          nihil facere quia iste eaque voluptas. Dicta deserunt adipisci, animi voluptas debitis placeat doloremque repellat, quo nam
-          similique voluptatem?
-        </p>
       </div>
     </div>
   );
@@ -60,13 +56,13 @@ function TopicSelection(props) {
 
 const mapStateToProps = (state) => {
   return {
-    tourStarted: state.startTour.tourStarted,
-    topicWindowOpen: state.openTopicWindow.topicWindowOpen
+    infoWindowOpen: state.openInfoWindow.openInfoWindow,
+    topicOpen: state.openTopicWindow.topicOpen
   };
 };
 
 const mapDispatchToProps = {
-  startTour,
+  openInfoWindow,
   openTopicWindow
 };
 
