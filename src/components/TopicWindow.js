@@ -52,17 +52,21 @@ function TopicWindow(props) {
         <div className="subtopic-wrapper">
           {subtopicsDescriptions.map((description, index) => (
             <div className="subtopic-description-container" key={index}>
-              {description[0] !== "" ? <p className="description">{description[0]}</p> : null}
+              {description[0] !== "" ? (
+                <div className="description">
+                  <p>{description[0]}</p>
+                  {props.topicIndex === 0 ? <div className="stamp-image"></div> : null}
+                </div>
+              ) : null}
               {description[2] !== undefined ? (
                 <div
                   className="image"
-                  style={{ backgroundImage: `url("./photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")` }}
+                  style={{ backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")` }}
                 ></div>
               ) : null}
               {description[1] !== "" ? <p className="image-description">{description[1]}</p> : null}
             </div>
           ))}
-          {props.topicIndex === 0 ? <div className="stamp-image"></div> : null}
         </div>
         <div className="content-bottom">
           <div className="buttons-container">

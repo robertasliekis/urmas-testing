@@ -457,6 +457,17 @@ p {
         .description {
           font-size: var(--font-size-small);
           margin-bottom: 10px;
+          position: relative;
+          .stamp-image {
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+            width: 140px;
+            height: 140px;
+            background-position: center;
+            background-size: contain;
+            background-image: url("./images/stamp.png");
+          }
         }
         .image {
           width: 100%;
@@ -473,16 +484,6 @@ p {
           margin-bottom: 20px;
         }
       }
-    }
-    .stamp-image {
-      position: absolute;
-      bottom: 40px;
-      right: var(--padding-left);
-      width: 140px;
-      height: 140px;
-      background-position: center;
-      background-size: contain;
-      background-image: url("./images/stamp.png");
     }
   }
 }

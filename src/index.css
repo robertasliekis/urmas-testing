@@ -794,6 +794,18 @@ p {
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container .description {
   font-size: var(--font-size-small);
   margin-bottom: 10px;
+  position: relative;
+}
+
+.topic-window-container .content .subtopic-wrapper .subtopic-description-container .description .stamp-image {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("./images/stamp.png");
 }
 
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container .image {
@@ -810,17 +822,6 @@ p {
   font-size: var(--font-size-mini);
   line-height: calc(var(--font-size-mini) + 3px);
   margin-bottom: 20px;
-}
-
-.topic-window-container .content .stamp-image {
-  position: absolute;
-  bottom: 40px;
-  right: var(--padding-left);
-  width: 140px;
-  height: 140px;
-  background-position: center;
-  background-size: contain;
-  background-image: url("./images/stamp.png");
 }
 
 .ref-image {
