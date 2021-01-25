@@ -7,6 +7,8 @@ import TopicSelection from "./components/TopicSelection";
 import InfoWindow from "./components/InfoWindow";
 import TopicWindow from "./components/TopicWindow";
 
+export const websiteName = "/urmas-testing";
+
 //"homepage": "https://robertasliekis.github.io/urmas-testing/",
 
 function App(props) {
@@ -18,8 +20,6 @@ function App(props) {
       props.openTopicWindow(topicWindow);
     }
   }, [props]);
-
-  const websiteName = "/urmas-testing";
 
   return (
     <Router>
