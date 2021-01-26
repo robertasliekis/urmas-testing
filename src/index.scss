@@ -311,10 +311,19 @@ p {
           // height: 100px;
           // border: 1px solid red;
           // box-sizing: border-box;
-          border: 3px solid red;
+          @include displayFlexColumn();
+          align-items: flex-start;
+          justify-content: flex-start;
           width: 100px;
+          border: 1px solid var(--global-color-orange);
+          border-top: none;
+          border-bottom: none;
+          position: relative;
+          margin-top: 10px;
+          padding-bottom: 80px;
+          box-sizing: border-box;
           height: 100px;
-          @include displayFlex();
+          border: 3px solid green;
           .topic-number {
             @include displayFlex();
             right: 100%;
