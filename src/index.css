@@ -421,10 +421,57 @@ p {
 }
 
 .topics-container .content .topics-header {
+  position: relative;
   background-color: var(--global-color-white-darker);
+}
+
+.topics-container .content .topics-header p {
   color: black;
   font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
   text-transform: uppercase;
+}
+
+.topics-container .content .topics-header .icons-container {
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 250px;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topics-container .content .topics-header .icons-container .icon {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/Look below.png");
+}
+
+.topics-container .content .topics-header .icons-container .icon:nth-child(1) {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.topics-container .content .topics-header .icons-container .icon:nth-child(2) {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .topics-container .content .topics-list-wrapper {
@@ -432,9 +479,12 @@ p {
   display: inline-block;
   overflow-x: scroll;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list {
+  position: relative;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,55 +576,21 @@ p {
 .topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(odd) {
   -webkit-transform: translateX(-45px);
           transform: translateX(-45px);
-  text-align: right;
+}
+
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(odd) .topic-title {
+  text-align: left;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(even) {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  text-align: right;
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
 
-.topics-container .content .topics-list-wrapper .topics-list .icons-container {
-  position: absolute;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  width: 250px;
-  top: -20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.topics-container .content .topics-list-wrapper .topics-list .icons-container .icon {
-  width: 40px;
-  height: 40px;
-  background-color: var(--global-color-orange);
-}
-
-.topics-container .content .topics-list-wrapper .topics-list .icons-container .icon:nth-child(1) {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.topics-container .content .topics-list-wrapper .topics-list .icons-container .icon:nth-child(2) {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(even) .topic-title {
+  text-align: right;
 }
 
 .content-bottom {

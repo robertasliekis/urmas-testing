@@ -22,13 +22,15 @@ function TopicSelection(props) {
           <p>Creative Centenary:</p>
           <p>100 years of Diplomatic Service of Lithuania</p>
         </div>
-        <div className="topics-header">Choose topic</div>
+        <div className="topics-header">
+          <p>Choose Topic </p>
+          <div className="icons-container">
+            <div className="icon"></div>
+            <div className="icon"></div>
+          </div>
+        </div>
         <div className="topics-list-wrapper">
           <div className="topics-list">
-            <div className="icons-container">
-              <div className="icon"></div>
-              <div className="icon"></div>
-            </div>
             {topics.map((topic, index) => (
               <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`/urmas-testing/${index + 1}`}>
                 <div className="topic-number">{`${index + 1}/${topics.length}`}</div>

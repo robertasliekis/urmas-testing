@@ -278,10 +278,34 @@ p {
       }
     }
     .topics-header {
+      position: relative;
       background-color: var(--global-color-white-darker);
-      color: black;
-      font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
-      text-transform: uppercase;
+      p {
+        color: black;
+        font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
+        text-transform: uppercase;
+      }
+      .icons-container {
+        position: absolute;
+        transform: translate(0, -50%);
+        width: 250px;
+        top: 50%;
+        @include displayFlexBetween();
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("./images/Look below.png");
+        }
+        .icon:nth-child(1) {
+          transform: translateX(-50%);
+        }
+        .icon:nth-child(2) {
+          transform: translateX(50%);
+        }
+      }
     }
     .topics-list-wrapper {
       height: calc(100vh - 2 * var(--title-height) - 56px);
@@ -291,7 +315,10 @@ p {
       display: inline-block;
       overflow-x: scroll;
       width: 100%;
+      -webkit-overflow-scrolling: touch;
+      overflow: auto;
       .topics-list {
+        position: relative;
         margin: 0 auto;
         @include displayFlexColumn();
         align-items: flex-start;
@@ -332,29 +359,15 @@ p {
         }
         .topic:nth-child(odd) {
           transform: translateX(-45px);
-          text-align: right;
+          .topic-title {
+            text-align: left;
+          }
         }
         .topic:nth-child(even) {
           align-self: flex-end;
-          text-align: right;
           transform: translateX(5px);
-        }
-        .icons-container {
-          position: absolute;
-          transform: translate(0, -100%);
-          width: 250px;
-          top: -20px;
-          @include displayFlexBetween();
-          .icon {
-            width: 40px;
-            height: 40px;
-            background-color: var(--global-color-orange);
-          }
-          .icon:nth-child(1) {
-            transform: translateX(-50%);
-          }
-          .icon:nth-child(2) {
-            transform: translateX(50%);
+          .topic-title {
+            text-align: right;
           }
         }
       }
