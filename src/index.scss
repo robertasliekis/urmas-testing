@@ -289,7 +289,7 @@ p {
       justify-content: flex-start;
       //overflow-x: scroll;
       height: 100vh;
-      border: 3px solid grey;
+      border: 3px solid yellow;
       width: 100%;
       .topics-list {
         @include displayFlexColumn();
