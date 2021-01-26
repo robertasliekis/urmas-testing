@@ -336,10 +336,12 @@ p {
             margin-right: 3px;
           }
           .topic-title {
+            display: flex;
             white-space: pre-line;
             font-family: "Open Sans", serif;
             margin-top: -5px;
             color: black;
+            height: auto;
           }
         }
         .topic:nth-child(1) {
