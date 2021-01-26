@@ -81,7 +81,7 @@ h1 {
 }
 
 p {
-  font-family: "MarlonPro-Regular";
+  font-family: "MarlonPro-Regular", Tahoma, Sans-Serif;
   margin: 0;
   font-size: var(--font-size-small);
   font-weight: 200;
@@ -130,12 +130,12 @@ p {
 .info-container {
   background-color: var(--global-color-brown);
   @include displayFlexColumn();
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   background-color: grey;
   color: white;
   padding: 0 var(--padding-left);
-  padding-top: 105px;
+  //padding-top: 105px;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -153,7 +153,7 @@ p {
       margin-bottom: 20px;
       .text {
         position: relative;
-        font-family: "MarlonPro-Medium";
+        font-family: "MarlonPro-Medium", Tahoma, Sans-Serif;
         .line {
           position: absolute;
           transform: translate(-100%, -50%);
@@ -172,7 +172,7 @@ p {
       // }
     }
     .text-box {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
     .text-bubble {
       @include displayFlexColumn();
@@ -199,7 +199,7 @@ p {
   .btn-start {
     width: 100%;
     @include displayFlex();
-    margin-top: 65px;
+    margin-top: 50px;
     .active-zone {
       position: relative;
       color: var(--global-color-orange);
@@ -226,7 +226,7 @@ p {
     @include displayFlex();
     margin: 0 5px;
     color: var(--global-color-orange);
-    font-family: "MarlonPro-Bold";
+    font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
     margin-bottom: 0;
     width: 35px;
   }
@@ -268,7 +268,7 @@ p {
     .title {
       background-color: var(--global-color-brown);
       color: white;
-      font-family: "MarlonPro-Medium";
+      font-family: "MarlonPro-Medium", Tahoma, Sans-Serif;
       p:nth-child(1) {
         text-transform: uppercase;
       }
@@ -279,7 +279,7 @@ p {
     .topics-header {
       background-color: var(--global-color-white-darker);
       color: black;
-      font-family: "MarlonPro-Bold";
+      font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
       text-transform: uppercase;
     }
     .topics-list-wrapper {
@@ -315,7 +315,7 @@ p {
             @include displayFlex();
             right: 100%;
             color: var(--global-color-orange);
-            font-family: "MarlonPro-Bold";
+            font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
             margin-right: 3px;
           }
           .topic-title {
@@ -385,7 +385,7 @@ p {
     justify-content: flex-start;
     width: 100%;
     .title {
-      font-family: "MarlonPro-Medium";
+      font-family: "MarlonPro-Medium", Tahoma, Sans-Serif;
       position: relative;
       @include displayFlexColumn();
       width: 100%;
@@ -422,7 +422,7 @@ p {
         font-size: var(--font-size-mini);
         line-height: var(--font-size-mini);
         position: relative;
-        font-family: "MarlonPro-Bold";
+        font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
         width: auto;
         .line {
           position: absolute;
