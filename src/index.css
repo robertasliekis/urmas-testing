@@ -34,12 +34,6 @@
           box-sizing: border-box;
 }
 
-img {
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 ul {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -486,9 +480,9 @@ p {
   position: relative;
   margin-top: 10px;
   padding-bottom: 80px;
-  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: auto;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic {
