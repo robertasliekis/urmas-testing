@@ -575,6 +575,7 @@ p {
   font-family: "MarlonPro-Bold";
   margin-right: 3px;
   width: 100%;
+  background-color: grey;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-title {
