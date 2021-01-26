@@ -327,6 +327,7 @@ p {
           background-color: white;
           padding: 5px 0;
           border: 1px solid red;
+          flex-wrap: wrap;
           .topic-number {
             @include displayFlex();
             right: 100%;
@@ -334,15 +335,17 @@ p {
             color: var(--global-color-orange);
             font-family: "MarlonPro-Bold";
             margin-right: 3px;
+            width: 100%;
           }
           .topic-title {
             display: flex;
-            //white-space: pre-line;
+            white-space: pre-line;
             white-space: nowrap;
             font-family: "Open Sans", serif;
             margin-top: -5px;
             color: black;
             height: auto;
+            width: 100%;
           }
         }
         .topic:nth-child(1) {
