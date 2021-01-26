@@ -322,20 +322,22 @@ p {
           margin-bottom: 35px;
           @include displayFlex();
           align-items: flex-start;
-          height: fit-content;
           background-color: white;
           padding: 5px 0;
+          width: 300px;
           border: 1px solid red;
           box-sizing: border-box;
           .topic-number {
             @include displayFlex();
             right: 100%;
-            width: 40px;
             color: var(--global-color-orange);
             font-family: "MarlonPro-Bold";
             margin-right: 3px;
-            height: 40px;
+            height: 80px;
+            width: 80px;
+            background-color: grey;
             border: 1px solid blue;
+            box-sizing: border-box;
           }
           .topic-title {
             display: flex;
@@ -344,7 +346,6 @@ p {
             margin-top: -5px;
             color: black;
             height: auto;
-            width: 100%;
           }
         }
         .topic:nth-child(1) {
