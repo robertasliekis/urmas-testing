@@ -426,7 +426,7 @@ p {
 }
 
 .topics-container .content .topics-list-wrapper {
-  display: block;
+  display: inline-block;
   height: 200px;
   border: 3px solid green;
   width: 100%;
@@ -436,6 +436,7 @@ p {
 }
 
 .topics-container .content .topics-list-wrapper .topics-list {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +472,7 @@ p {
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic {
+  margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,10 +486,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  position: relative;
-  height: 100px;
-  border: 3px solid grey;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: white;
+  padding: 5px 0;
+  width: 250px;
+  border: 1px solid red;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-number {
@@ -508,12 +513,6 @@ p {
   color: var(--global-color-orange);
   font-family: "MarlonPro-Bold";
   margin-right: 3px;
-  height: 80px;
-  width: 80px;
-  background-color: grey;
-  border: 1px solid blue;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-title {
@@ -524,7 +523,6 @@ p {
   font-family: "Open Sans", serif;
   margin-top: -5px;
   color: black;
-  height: auto;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .icons-container {
