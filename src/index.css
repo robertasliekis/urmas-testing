@@ -427,7 +427,6 @@ p {
 
 .topics-container .content .topics-list-wrapper {
   display: block;
-  overflow: auto;
   height: 200px;
   border: 3px solid green;
   width: 100%;
