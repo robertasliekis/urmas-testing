@@ -549,6 +549,7 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  border: 1px solid red;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-number {

@@ -259,7 +259,6 @@ p {
     @include displayFlexColumn();
     justify-content: flex-start;
     width: 100%;
-
     .title,
     .topics-header {
       @include displayFlexColumn();
@@ -326,6 +325,7 @@ p {
           background-color: white;
           padding: 5px 0;
           width: fit-content;
+          border: 1px solid red;
           .topic-number {
             @include displayFlex();
             right: 100%;
