@@ -128,7 +128,6 @@ p {
   // min-height: 100vh;
   height: calc(100vh - 56px);
   //border: 3px solid green;
-  overflow: hidden;
 }
 
 .info-container {
@@ -335,6 +334,7 @@ p {
         padding-bottom: 80px;
         //height: 400px;
         height: auto;
+        -webkit-overflow-scrolling: touch;
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
@@ -479,6 +479,7 @@ p {
       padding: 0 var(--padding-left);
       padding-bottom: 160px;
       padding-top: 20px;
+      -webkit-overflow-scrolling: touch;
       .subtopic-description-container {
         text-align: justify;
         font-size: var(--font-size-small);

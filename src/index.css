@@ -117,7 +117,6 @@ p {
   position: relative;
   width: 100%;
   height: calc(100vh - 56px);
-  overflow: hidden;
 }
 
 .info-container {
@@ -515,6 +514,7 @@ p {
   margin-top: 10px;
   padding-bottom: 80px;
   height: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic {
@@ -781,6 +781,7 @@ p {
   padding: 0 var(--padding-left);
   padding-bottom: 160px;
   padding-top: 20px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container {
