@@ -30,14 +30,14 @@ function TopicSelection(props) {
               <div className="icon"></div>
             </div>
             {topics.map((topic, index) => (
-              // <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`/urmas-testing/${index + 1}`}>
-              //   <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
-              //   <div className="topic-title">{topic.topicTitle}</div>
-              // </Link>
-              <div className="topic" key={topic.id} onClick={() => topicClicked(index)}>
+              <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`/urmas-testing/${index + 1}`}>
                 <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
                 <div className="topic-title">{topic.topicTitle}</div>
-              </div>
+              </Link>
+              // <div className="topic" key={topic.id} onClick={() => topicClicked(index)}>
+              //   <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
+              //   <div className="topic-title">{topic.topicTitle}</div>
+              // </div>
             ))}
           </div>
         </div>

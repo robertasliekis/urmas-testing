@@ -429,9 +429,7 @@ p {
   height: calc(100vh - 2 * var(--title-height) - 56px);
   display: inline-block;
   overflow-x: scroll;
-  border: 3px solid green;
   width: 100%;
-  position: relative;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list {
@@ -461,11 +459,9 @@ p {
   border: 1px solid var(--global-color-orange);
   border-top: none;
   border-bottom: none;
-  position: relative;
   margin-top: 10px;
   padding-bottom: 80px;
   height: auto;
-  border: 3px solid pink;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic {
@@ -488,8 +484,7 @@ p {
           align-items: flex-start;
   background-color: white;
   padding: 5px 0;
-  width: 250px;
-  border: 1px solid red;
+  width: auto;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-number {
@@ -520,6 +515,24 @@ p {
   font-family: "Open Sans", serif;
   margin-top: -5px;
   color: black;
+}
+
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(1) {
+  margin-top: 30px;
+}
+
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(odd) {
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  text-align: right;
+}
+
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(even) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .icons-container {
@@ -586,7 +599,6 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 20px;
-  display: none;
 }
 
 .content-bottom .btn-info {
