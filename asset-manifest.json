@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/urmas-testing/static/css/main.5624d0bb.chunk.css",
+    "main.css": "/urmas-testing/static/css/main.80b0d941.chunk.css",
     "main.js": "/urmas-testing/static/js/main.de7352fb.chunk.js",
     "main.js.map": "/urmas-testing/static/js/main.de7352fb.chunk.js.map",
     "runtime-main.js": "/urmas-testing/static/js/runtime-main.c69b630e.js",
@@ -10,14 +10,14 @@
     "static/js/3.202cdb75.chunk.js": "/urmas-testing/static/js/3.202cdb75.chunk.js",
     "static/js/3.202cdb75.chunk.js.map": "/urmas-testing/static/js/3.202cdb75.chunk.js.map",
     "index.html": "/urmas-testing/index.html",
-    "static/css/main.5624d0bb.chunk.css.map": "/urmas-testing/static/css/main.5624d0bb.chunk.css.map",
+    "static/css/main.80b0d941.chunk.css.map": "/urmas-testing/static/css/main.80b0d941.chunk.css.map",
     "static/js/2.cd981bc3.chunk.js.LICENSE.txt": "/urmas-testing/static/js/2.cd981bc3.chunk.js.LICENSE.txt",
     "static/media/index.css": "/urmas-testing/static/media/stamp.080a1512.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c69b630e.js",
     "static/js/2.cd981bc3.chunk.js",
-    "static/css/main.5624d0bb.chunk.css",
+    "static/css/main.80b0d941.chunk.css",
     "static/js/main.de7352fb.chunk.js"
   ]
 }
