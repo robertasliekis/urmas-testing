@@ -52,6 +52,10 @@ html {
   margin: 0;
 }
 
+body {
+  position: fixed;
+}
+
 h1,
 h2,
 h3,
