@@ -116,7 +116,8 @@ p {
   overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: calc(100vh - 56px);
+  overflow: hidden;
 }
 
 .info-container {
@@ -556,6 +557,7 @@ p {
   right: 100%;
   color: var(--global-color-orange);
   font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
+  font-family: "Open Sans", serif;
   margin-right: 3px;
 }
 
@@ -565,7 +567,6 @@ p {
   display: flex;
   white-space: pre-line;
   font-family: "Open Sans", serif;
-  margin-top: -5px;
   color: black;
 }
 

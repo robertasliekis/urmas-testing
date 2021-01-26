@@ -125,7 +125,10 @@ p {
   overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
+  height: calc(100vh - 56px);
+  //border: 3px solid green;
+  overflow: hidden;
 }
 
 .info-container {
@@ -255,6 +258,7 @@ p {
   position: relative;
   z-index: 2;
   display: flex;
+
   .content {
     @include displayFlexColumn();
     justify-content: flex-start;
@@ -344,13 +348,16 @@ p {
             right: 100%;
             color: var(--global-color-orange);
             font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
+            font-family: "Open Sans", serif;
+
             margin-right: 3px;
           }
           .topic-title {
             display: flex;
             white-space: pre-line;
             font-family: "Open Sans", serif;
-            margin-top: -5px;
+
+            //  margin-top: -5px;
             color: black;
           }
         }
