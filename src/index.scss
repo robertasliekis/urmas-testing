@@ -309,7 +309,7 @@ p {
         // height: 500px;
         border: 3px solid blue;
         box-sizing: border-box;
-
+        height: 100%;
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
@@ -319,6 +319,7 @@ p {
           width: 300px;
           border: 1px solid red;
           box-sizing: border-box;
+          height: auto;
           .topic-number {
             @include displayFlex();
             right: 100%;
