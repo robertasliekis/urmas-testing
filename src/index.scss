@@ -321,10 +321,11 @@ p {
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
+          flex: 1;
+          height: auto;
           align-items: flex-start;
           background-color: white;
           padding: 5px 0;
-          width: fit-content;
           border: 1px solid red;
           .topic-number {
             @include displayFlex();
