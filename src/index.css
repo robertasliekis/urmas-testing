@@ -426,12 +426,11 @@ p {
 }
 
 .topics-container .content .topics-list-wrapper {
+  height: calc(100vh - 2 * var(--title-height) - 56px);
   display: inline-block;
-  height: 200px;
+  overflow-x: scroll;
   border: 3px solid green;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   position: relative;
 }
 
@@ -465,8 +464,6 @@ p {
   position: relative;
   margin-top: 10px;
   padding-bottom: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   height: auto;
   border: 3px solid pink;
 }
