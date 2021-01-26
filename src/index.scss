@@ -299,7 +299,6 @@ p {
         align-items: flex-start;
         justify-content: flex-start;
         width: 250px;
-        width: 100%;
         border: 1px solid var(--global-color-orange);
         border-top: none;
         border-bottom: none;
@@ -309,19 +308,16 @@ p {
         // height: 500px;
         border: 3px solid blue;
         box-sizing: border-box;
-        height: 100%;
-        flex: 1;
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
           align-items: flex-start;
           background-color: white;
           padding: 5px 0;
-          width: 300px;
+          width: 200px;
+          height: 100px;
           border: 1px solid red;
           box-sizing: border-box;
-          height: auto;
-          flex: 1;
           .topic-number {
             @include displayFlex();
             right: 100%;
