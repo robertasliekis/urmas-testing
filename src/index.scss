@@ -302,15 +302,19 @@ p {
         height: 2000px;
         border: 3px solid green;
         .topic {
-          margin-bottom: 35px;
-          @include displayFlex();
-          align-items: flex-start;
-          background-color: white;
-          padding: 5px 0;
-          width: 200px;
+          // margin-bottom: 35px;
+          // @include displayFlex();
+          // align-items: flex-start;
+          // background-color: white;
+          // padding: 5px 0;
+          // width: 200px;
+          // height: 100px;
+          // border: 1px solid red;
+          // box-sizing: border-box;
+          border: 3px solid red;
+          width: 100px;
           height: 100px;
-          border: 1px solid red;
-          box-sizing: border-box;
+          @include displayFlex();
           .topic-number {
             @include displayFlex();
             right: 100%;
@@ -332,18 +336,18 @@ p {
             height: auto;
           }
         }
-        .topic:nth-child(1) {
-          margin-top: 30px;
-        }
-        .topic:nth-child(odd) {
-          transform: translateX(-45px);
-          text-align: right;
-        }
-        .topic:nth-child(even) {
-          align-self: flex-end;
-          text-align: right;
-          transform: translateX(5px);
-        }
+        // .topic:nth-child(1) {
+        //   margin-top: 30px;
+        // }
+        // .topic:nth-child(odd) {
+        //   transform: translateX(-45px);
+        //   text-align: right;
+        // }
+        // .topic:nth-child(even) {
+        //   align-self: flex-end;
+        //   text-align: right;
+        //   transform: translateX(5px);
+        // }
         .icons-container {
           position: absolute;
           transform: translate(0, -100%);
