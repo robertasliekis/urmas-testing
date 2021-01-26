@@ -290,7 +290,7 @@ p {
       // overflow-x: scroll;
       height: 400px;
 
-      border: 3px solid pink;
+      border: 3px solid green;
       width: 100%;
       box-sizing: border-box;
 
@@ -310,6 +310,7 @@ p {
         border: 3px solid blue;
         box-sizing: border-box;
         height: 100%;
+        flex: 1;
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
@@ -320,6 +321,7 @@ p {
           border: 1px solid red;
           box-sizing: border-box;
           height: auto;
+          flex: 1;
           .topic-number {
             @include displayFlex();
             right: 100%;
