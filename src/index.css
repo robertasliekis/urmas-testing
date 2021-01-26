@@ -578,7 +578,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  white-space: pre-line;
+  white-space: nowrap;
   font-family: "Open Sans", serif;
   margin-top: -5px;
   color: black;
