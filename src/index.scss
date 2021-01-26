@@ -327,7 +327,6 @@ p {
           background-color: white;
           padding: 5px 0;
           border: 1px solid red;
-          flex-wrap: wrap;
           .topic-number {
             @include displayFlex();
             right: 100%;
@@ -335,8 +334,8 @@ p {
             color: var(--global-color-orange);
             font-family: "MarlonPro-Bold";
             margin-right: 3px;
-            width: 100%;
-            background-color: grey;
+            height: 40px;
+            border: 1px solid blue;
           }
           .topic-title {
             display: flex;

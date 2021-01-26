@@ -551,8 +551,6 @@ p {
   background-color: white;
   padding: 5px 0;
   border: 1px solid red;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-number {
@@ -574,8 +572,8 @@ p {
   color: var(--global-color-orange);
   font-family: "MarlonPro-Bold";
   margin-right: 3px;
-  width: 100%;
-  background-color: grey;
+  height: 40px;
+  border: 1px solid blue;
 }
 
 .topics-container .content .topics-list-wrapper .topics-list .topic .topic-title {
