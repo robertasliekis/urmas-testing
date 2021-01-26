@@ -280,17 +280,18 @@ p {
     }
     .topics-list-wrapper {
       // height: calc(100vh - 2 * var(--title-height) - 56px);
-      @include displayFlexColumn();
-      justify-content: flex-start;
+      // @include displayFlexColumn();
+      // justify-content: flex-start;
+      display: block;
       // overflow-x: scroll;
-      overflow: visible;
+      overflow: auto;
       height: 200px;
 
       border: 3px solid green;
       width: 100%;
       box-sizing: border-box;
       position: relative;
-      flex-wrap: nowrap;
+
       .topics-list {
         @include displayFlexColumn();
         align-items: flex-start;
@@ -305,7 +306,6 @@ p {
         box-sizing: border-box;
         height: 400px;
         border: 3px solid pink;
-        flex-wrap: nowrap;
 
         .topic {
           // margin-bottom: 35px;
