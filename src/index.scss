@@ -384,6 +384,7 @@ p {
   @include displayFlex();
   align-items: flex-end;
   padding-bottom: 20px;
+  display: none;
   .btn-info {
     background-image: url("./images/Look\ info.png");
   }

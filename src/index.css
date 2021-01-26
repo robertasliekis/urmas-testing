@@ -610,6 +610,7 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 20px;
+  display: none;
 }
 
 .content-bottom .btn-info {
