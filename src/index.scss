@@ -23,7 +23,7 @@
   --font-size-mini: 12px;
   --padding-left: 40px;
   --padding-right: 80px;
-  --title-height: 60px;
+  --title-height: 70px;
 }
 
 *,
@@ -285,7 +285,7 @@ p {
       text-transform: uppercase;
     }
     .topics-list-wrapper {
-      height: calc(100vh - 2 * var(--title-height));
+      height: calc(100vh - 2 * var(--title-height) - 56px);
       @include displayFlexColumn();
       justify-content: flex-start;
       overflow-x: scroll;
@@ -420,13 +420,14 @@ p {
         line-height: var(--font-size-mini);
         position: relative;
         font-family: "MarlonPro-Bold";
+        width: auto;
         .line {
           position: absolute;
           transform: translate(100%, -50%);
-          top: 50%;
+          top: 6px;
           right: -5px;
-          width: 200px;
-          height: 2px;
+          width: 300px;
+          height: 1px;
           background-color: black;
         }
       }
@@ -437,19 +438,22 @@ p {
         .line {
           background-color: var(--global-color-orange);
           transform: translate(-100%, -50%);
-          top: 50%;
           left: -5px;
         }
       }
+      // .text:nth-child(2) {
+      //   white-space: pre-wrap;
+      //   width: fit-content;
+      // }
     }
     .subtopic-wrapper {
       @include displayFlexColumn();
       justify-content: flex-start;
-      height: calc(100vh - 2 * var(--title-height));
+      height: calc(100vh - 2 * var(--title-height) - 56px);
       width: 100%;
       overflow-x: scroll;
       padding: 0 var(--padding-left);
-      padding-bottom: 100px;
+      padding-bottom: 160px;
       padding-top: 20px;
       .subtopic-description-container {
         text-align: justify;
@@ -462,8 +466,8 @@ p {
             position: absolute;
             bottom: -80px;
             right: 0;
-            width: 140px;
-            height: 140px;
+            width: 180px;
+            height: 180px;
             background-position: center;
             background-size: contain;
             background-image: url("./images/stamp.png");
@@ -475,7 +479,7 @@ p {
           background-color: white;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: contain;
+          background-size: cover;
           margin-bottom: 10px;
         }
         .image-description {

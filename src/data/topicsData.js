@@ -79,7 +79,7 @@ Photographer: Aleksandra Jurašaitytė.
         ]
       },
       {
-        subtopic: `The formation of the 1st Cabinet of Ministers of Lithuania, 1918`,
+        subtopic: "The formation of the 1st Cabinet of Ministers of Lithuania, 1918",
         description: [
           [
             `A delegation of the State Council of Lithuania with Konstantinas Olšauskas, a member of the Council of Lithuanian Nation, Juozas Purickis, a representative of the State Council of Lithuania abroad and Vilius Gaigalaitis, a chairman of the Prussian Lithuanian National Council.`,

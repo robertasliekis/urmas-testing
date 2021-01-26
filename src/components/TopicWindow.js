@@ -7,6 +7,8 @@ import { connect } from "react-redux";
 import { openTopicWindow } from "../actions";
 
 function TopicWindow(props) {
+  const subtopicContainerRef = React.createRef();
+
   const [subtopicIndex, setSubtopicIndex] = useState(0);
 
   const subtopicsCount = topics[props.topicIndex].subtopics.length;
@@ -20,12 +22,14 @@ function TopicWindow(props) {
     //   setSubtopicIndex(0);
     // }, 700);
     setSubtopicIndex(0);
+    subtopicContainerRef.current.scrollTo(0, 0);
   };
 
   const topicCarouselClicked = (direction) => {
     if ((direction === -1 && subtopicIndex !== 0) || (direction === 1 && subtopicIndex !== subtopicsCount - 1)) {
       setSubtopicIndex(subtopicIndex + direction);
     }
+    subtopicContainerRef.current.scrollTo(0, 0);
   };
 
   return (
@@ -49,7 +53,7 @@ function TopicWindow(props) {
             <div className="line"></div>
           </div>
         </div>
-        <div className="subtopic-wrapper">
+        <div className="subtopic-wrapper" ref={subtopicContainerRef}>
           {subtopicsDescriptions.map((description, index) => (
             <div className="subtopic-description-container" key={index}>
               {description[0] !== "" ? (
