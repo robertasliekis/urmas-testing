@@ -321,12 +321,12 @@ p {
         .topic {
           margin-bottom: 35px;
           @include displayFlex();
-          flex: 1;
-          height: auto;
           align-items: flex-start;
+          height: fit-content;
           background-color: white;
           padding: 5px 0;
           border: 1px solid red;
+          box-sizing: border-box;
           .topic-number {
             @include displayFlex();
             right: 100%;
@@ -340,7 +340,6 @@ p {
           .topic-title {
             display: flex;
             white-space: pre-line;
-            white-space: nowrap;
             font-family: "Open Sans", serif;
             margin-top: -5px;
             color: black;
