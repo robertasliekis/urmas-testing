@@ -53,7 +53,8 @@ html {
 }
 
 body {
-  position: fixed;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1,
