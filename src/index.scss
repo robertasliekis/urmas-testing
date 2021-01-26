@@ -287,7 +287,9 @@ p {
       // height: calc(100vh - 2 * var(--title-height) - 56px);
       @include displayFlexColumn();
       justify-content: flex-start;
-      // overflow-x: scroll;
+      //overflow-x: scroll;
+      height: 100vh;
+      border: 3px solid grey;
       width: 100%;
       .topics-list {
         @include displayFlexColumn();
