@@ -357,14 +357,20 @@ p {
             display: flex;
             white-space: pre-line;
             font-family: "Open Sans", serif;
-
             //  margin-top: -5px;
             color: black;
           }
         }
+
         .topic:nth-child(1) {
           margin-top: 30px;
         }
+        .topic:nth-child(15) {
+          .topic-title {
+            width: 230px;
+          }
+        }
+
         .topic:nth-child(odd) {
           transform: translateX(-45px);
           .topic-title {
@@ -446,6 +452,7 @@ p {
         position: relative;
         font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
         width: auto;
+        word-break: normal;
         .line {
           position: absolute;
           transform: translate(100%, -50%);
@@ -459,17 +466,19 @@ p {
       .text:nth-child(1) {
         font-family: "Open Sans", serif;
         color: var(--global-color-orange);
-        margin-bottom: 5px;
+        margin-bottom: 12px;
+        white-space: nowrap;
         .line {
           background-color: var(--global-color-orange);
           transform: translate(-100%, -50%);
           left: -5px;
         }
       }
-      // .text:nth-child(2) {
-      //   white-space: pre-wrap;
-      //   width: fit-content;
-      // }
+      .text:nth-child(2) {
+        white-space: pre-wrap;
+        width: fit-content;
+        text-align: justify;
+      }
     }
     .subtopic-wrapper {
       @include displayFlexColumn();
@@ -490,7 +499,7 @@ p {
           position: relative;
           .stamp-image {
             position: absolute;
-            bottom: -80px;
+            bottom: -140px;
             right: 0;
             width: 180px;
             height: 180px;
@@ -500,18 +509,19 @@ p {
           }
         }
         .image {
-          width: 100%;
-          height: 200px;
+          max-width: 100%;
+          height: auto;
+          display: inline-block;
           background-color: white;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: cover;
+          object-fit: contain;
           margin-bottom: 10px;
         }
         .image-description {
           font-size: var(--font-size-mini);
           line-height: calc(var(--font-size-mini) + 3px);
-          margin-bottom: 20px;
+          margin-bottom: 30px;
         }
       }
     }

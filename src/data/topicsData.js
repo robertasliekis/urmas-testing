@@ -122,7 +122,8 @@ Source: Lithuanian Central State Archives.`,
         ]
       },
       {
-        subtopic: `Ministry of Foreign Affairs building in Kaunas, 1919-1921`,
+        subtopic: `Ministry of Foreign Affairs building in Kaunas, 
+1919-1921`,
         description: [
           [
             `The building of the First Cabinet of Ministers of Lithuania`,
@@ -260,7 +261,8 @@ Source: Lithuanian Central State Archives.`,
         ]
       },
       {
-        subtopic: `MFA‘s employees: diplomats and civil servants, 1919-1940.`,
+        subtopic: `MFA‘s employees: diplomats and civil servants,
+1919-1940.`,
         description: [
           [
             `Prime Minister Vytautas Petrulis and Minister of Foreign Affairs Valdemaras Vytautas Čarneckis among the participants of a conference of Lithuanian diplomats in the building of the Cabinet of Ministers of Lithuania.`,
@@ -499,7 +501,8 @@ Bypassing the demarcation line established by the treaty, on October 9, 1920, Po
         ]
       },
       {
-        subtopic: `Development of the Polish-Lithuanian dispute, 1919-1939`,
+        subtopic: `Development of the Polish-Lithuanian dispute,
+1919-1939`,
         description: [
           [`Lithuanian delegates during the negotiations with Poland. The negotiations were led by the Belgian politician Paul Hymans. `],
           [
@@ -596,7 +599,8 @@ Source: Odry family archive.`,
         ]
       },
       {
-        subtopic: `The annexation of the Klaipėda Region to Lithuania, 1923-1924.`,
+        subtopic: `The annexation of the Klaipėda Region to Lithuania,
+1923-1924.`,
         description: [
           [
             `Lithuanian military parade took place in the new market square on February 20, 1923. 
@@ -757,7 +761,8 @@ Source: Lithuanian Central State Archives.`,
         ]
       },
       {
-        subtopic: `Officials during Lithuania's visits abroad from 1918-1940`,
+        subtopic: `Officials during Lithuania's visits abroad from
+1918-1940`,
         description: [
           [
             `The Prime Minister and the Minister of Foreign Affairs of Lithuania Augustinas Voldemaras at the Ministry of Foreign Affairs of Germany after signing a bilateral trade agreement. 
@@ -1186,8 +1191,8 @@ Source: Lithuanian Central State Archives.`,
   {
     id: 15,
     topicTitle: `INDEPENDENCE ON THE 
-    BASIS OF STATE 
-    CONTINUITY, 1988-1990`,
+    BASIS OF STATE CONTINUITY,
+    1988-1990`,
     subtopics: [
       {
         subtopic: `Rebirth, 1988-1989`,

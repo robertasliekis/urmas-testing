@@ -53,24 +53,30 @@ function TopicWindow(props) {
             <div className="line"></div>
           </div>
         </div>
-        <div className="subtopic-wrapper" ref={subtopicContainerRef}>
-          {subtopicsDescriptions.map((description, index) => (
-            <div className="subtopic-description-container" key={index}>
-              {description[0] !== "" ? (
-                <div className="description">
-                  <p>{description[0]}</p>
-                  {props.topicIndex === 0 ? <div className="stamp-image"></div> : null}
-                </div>
-              ) : null}
-              {description[2] !== undefined ? (
-                <div
-                  className="image"
-                  style={{ backgroundImage: `url("photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")` }}
-                ></div>
-              ) : null}
-              {description[1] !== "" ? <p className="image-description">{description[1]}</p> : null}
-            </div>
-          ))}
+        <div className="subtopic-wrapper" ref={subtopicContainerRef} key={subtopicIndex}>
+          {subtopicsDescriptions.map((description, index) => {
+            return (
+              <div className="subtopic-description-container" key={index}>
+                {description[0] !== "" ? (
+                  <div className="description">
+                    <p>{description[0]}</p>
+                    {props.topicIndex === 0 ? <div className="stamp-image"></div> : null}
+                  </div>
+                ) : null}
+                {description[2] !== undefined ? (
+                  <img
+                    src={`/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg`}
+                    className="image"
+                    style={{
+                      backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")`,
+                      marginBottom: description[1] === `` ? "30px" : "10px"
+                    }}
+                  ></img>
+                ) : null}
+                {description[1] !== "" ? <p className="image-description">{description[1]}</p> : null}
+              </div>
+            );
+          })}
         </div>
         <div className="content-bottom">
           <div className="buttons-container">

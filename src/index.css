@@ -574,6 +574,10 @@ p {
   margin-top: 30px;
 }
 
+.topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(15) .topic-title {
+  width: 230px;
+}
+
 .topics-container .content .topics-list-wrapper .topics-list .topic:nth-child(odd) {
   -webkit-transform: translateX(-45px);
           transform: translateX(-45px);
@@ -730,6 +734,7 @@ p {
   position: relative;
   font-family: "MarlonPro-Bold", Tahoma, Sans-Serif;
   width: auto;
+  word-break: normal;
 }
 
 .topic-window-container .content .info-header .text .line {
@@ -746,7 +751,8 @@ p {
 .topic-window-container .content .info-header .text:nth-child(1) {
   font-family: "Open Sans", serif;
   color: var(--global-color-orange);
-  margin-bottom: 5px;
+  margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .topic-window-container .content .info-header .text:nth-child(1) .line {
@@ -754,6 +760,14 @@ p {
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
   left: -5px;
+}
+
+.topic-window-container .content .info-header .text:nth-child(2) {
+  white-space: pre-wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: justify;
 }
 
 .topic-window-container .content .subtopic-wrapper {
@@ -797,7 +811,7 @@ p {
 
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container .description .stamp-image {
   position: absolute;
-  bottom: -80px;
+  bottom: -140px;
   right: 0;
   width: 180px;
   height: 180px;
@@ -807,19 +821,21 @@ p {
 }
 
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container .image {
-  width: 100%;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 10px;
 }
 
 .topic-window-container .content .subtopic-wrapper .subtopic-description-container .image-description {
   font-size: var(--font-size-mini);
   line-height: calc(var(--font-size-mini) + 3px);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .ref-image {
