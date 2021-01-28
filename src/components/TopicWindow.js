@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import urlText from "./urlText";
+
 import topics from "../data/topicsData";
 
 import { connect } from "react-redux";
@@ -41,7 +43,7 @@ function TopicWindow(props) {
         <div className="title">
           <p>Creative Centenary:</p>
           <p>100 years of Diplomatic Service of Lithuania</p>
-          <Link className="btn btn-back" onClick={() => buttonBackClicked()} to={"/urmas-testing/"}></Link>
+          <Link className="btn btn-back" onClick={() => buttonBackClicked()} to={`${urlText}/`}></Link>
         </div>
         <div className="info-header">
           <div className="text">

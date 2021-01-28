@@ -11,3 +11,10 @@ export const openTopicWindow = (bool) => {
     payload: bool
   };
 };
+
+export const setUrlText = (bool) => {
+  return {
+    type: "SET_URL_TEXT",
+    payload: bool
+  };
+};

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { openInfoWindow, openTopicWindow } from "../actions";
 import topics from "../data/topicsData";
+import urlText from "./urlText";
 
 function TopicSelection(props) {
   const topicClicked = (index) => {
@@ -32,7 +33,7 @@ function TopicSelection(props) {
         <div className="topics-list-wrapper">
           <div className="topics-list">
             {topics.map((topic, index) => (
-              <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`/urmas-testing/${index + 1}`}>
+              <Link className="topic" key={topic.id} onClick={() => topicClicked(index)} to={`${urlText}/${index + 1}`}>
                 <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
                 <div className="topic-title">{topic.topicTitle}</div>
               </Link>
@@ -45,12 +46,12 @@ function TopicSelection(props) {
         </div>
 
         <div className="content-bottom">
-          <Link className="btn btn-round btn-info" onClick={() => infoButtonClicked()} to={"/urmas-testing/info"}>
+          <Link className="btn btn-round btn-info" onClick={() => infoButtonClicked()} to={`${urlText}/info`}>
             <div className="icon"></div>
           </Link>
         </div>
 
-        <div className="ref-image" style={{ backgroundImage: `url("./images/ref2.jpg")` }}></div>
+        {/* <div className="ref-image" style={{ backgroundImage: `url("./images/ref2.jpg")` }}></div> */}
       </div>
     </div>
   );

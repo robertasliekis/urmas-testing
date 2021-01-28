@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { openInfoWindow } from "../actions";
 import { Link } from "react-router-dom";
+import urlText from "./urlText";
 
 function InfoWindow(props) {
   const tourStartedClicked = () => {
@@ -36,7 +37,7 @@ function InfoWindow(props) {
         </div>
         <div className="ref-image" style={{ backgroundImage: `url("./images/ref.jpg")` }}></div>
       </div>
-      <Link className="btn btn-start" onClick={() => tourStartedClicked()} to={"/urmas-testing/"}>
+      <Link className="btn btn-start" onClick={() => tourStartedClicked()} to={`${urlText}/`}>
         <div className="active-zone">
           tap to start <div className="line"></div>
         </div>
