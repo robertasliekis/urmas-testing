@@ -69,6 +69,7 @@ function TopicWindow(props) {
                   <img
                     src={`photos/${topics[props.topicIndex].id}/image${description[2]}.jpg`}
                     className="image"
+                    alt="urmas"
                     style={{
                       backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")`,
                       marginBottom: description[1] === `` ? "30px" : "10px"

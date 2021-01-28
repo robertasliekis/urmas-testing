@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { openTopicWindow } from "./actions";
 
@@ -22,7 +22,8 @@ function App(props) {
   }, [props]);
 
   return (
-    <Router>
+    <HashRouter>
+      {/* <Router> */}
       <div className="website-wrapper">
         <Switch>
           <Route exact path={`${urlText}/`} component={TopicSelection} />
@@ -31,7 +32,8 @@ function App(props) {
           <Route path="*" component={TopicSelection} />
         </Switch>
       </div>
-    </Router>
+      {/* </Router> */}
+    </HashRouter>
   );
 }
 
