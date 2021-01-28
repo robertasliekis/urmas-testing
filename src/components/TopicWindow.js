@@ -67,7 +67,7 @@ function TopicWindow(props) {
                 ) : null}
                 {description[2] !== undefined ? (
                   <img
-                    src={`/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg`}
+                    src={`photos/${topics[props.topicIndex].id}/image${description[2]}.jpg`}
                     className="image"
                     style={{
                       backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")`,
