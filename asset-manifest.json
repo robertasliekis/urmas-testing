@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/urmas-testing/static/css/main.5e5302a1.chunk.css",
-    "main.js": "/urmas-testing/static/js/main.968e2e81.chunk.js",
-    "main.js.map": "/urmas-testing/static/js/main.968e2e81.chunk.js.map",
-    "runtime-main.js": "/urmas-testing/static/js/runtime-main.c69b630e.js",
-    "runtime-main.js.map": "/urmas-testing/static/js/runtime-main.c69b630e.js.map",
-    "static/js/2.cd981bc3.chunk.js": "/urmas-testing/static/js/2.cd981bc3.chunk.js",
-    "static/js/2.cd981bc3.chunk.js.map": "/urmas-testing/static/js/2.cd981bc3.chunk.js.map",
-    "static/js/3.202cdb75.chunk.js": "/urmas-testing/static/js/3.202cdb75.chunk.js",
-    "static/js/3.202cdb75.chunk.js.map": "/urmas-testing/static/js/3.202cdb75.chunk.js.map",
-    "index.html": "/urmas-testing/index.html",
-    "static/css/main.5e5302a1.chunk.css.map": "/urmas-testing/static/css/main.5e5302a1.chunk.css.map",
-    "static/js/2.cd981bc3.chunk.js.LICENSE.txt": "/urmas-testing/static/js/2.cd981bc3.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/urmas-testing/static/media/stamp.080a1512.png"
+    "main.css": "/tours/urmas/static/css/main.4a4a4d7f.chunk.css",
+    "main.js": "/tours/urmas/static/js/main.d0466403.chunk.js",
+    "main.js.map": "/tours/urmas/static/js/main.d0466403.chunk.js.map",
+    "runtime-main.js": "/tours/urmas/static/js/runtime-main.cba5fcd9.js",
+    "runtime-main.js.map": "/tours/urmas/static/js/runtime-main.cba5fcd9.js.map",
+    "static/js/2.2ed0d989.chunk.js": "/tours/urmas/static/js/2.2ed0d989.chunk.js",
+    "static/js/2.2ed0d989.chunk.js.map": "/tours/urmas/static/js/2.2ed0d989.chunk.js.map",
+    "static/js/3.202cdb75.chunk.js": "/tours/urmas/static/js/3.202cdb75.chunk.js",
+    "static/js/3.202cdb75.chunk.js.map": "/tours/urmas/static/js/3.202cdb75.chunk.js.map",
+    "index.html": "/tours/urmas/index.html",
+    "static/css/main.4a4a4d7f.chunk.css.map": "/tours/urmas/static/css/main.4a4a4d7f.chunk.css.map",
+    "static/js/2.2ed0d989.chunk.js.LICENSE.txt": "/tours/urmas/static/js/2.2ed0d989.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tours/urmas/static/media/stamp.080a1512.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c69b630e.js",
-    "static/js/2.cd981bc3.chunk.js",
-    "static/css/main.5e5302a1.chunk.css",
-    "static/js/main.968e2e81.chunk.js"
+    "static/js/runtime-main.cba5fcd9.js",
+    "static/js/2.2ed0d989.chunk.js",
+    "static/css/main.4a4a4d7f.chunk.css",
+    "static/js/main.d0466403.chunk.js"
   ]
 }
