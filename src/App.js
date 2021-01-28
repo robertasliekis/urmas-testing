@@ -10,6 +10,7 @@ import TopicWindow from "./components/TopicWindow";
 export const websiteName = "/urmas-testing";
 
 //"homepage": "https://robertasliekis.github.io/urmas-testing/",
+//"homepage": "https://gluk.synology.me/tours/urmas/",
 
 function App(props) {
   useEffect(() => {
