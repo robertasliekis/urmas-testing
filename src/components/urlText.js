@@ -1,3 +1,3 @@
-const urlText = "/urmas";
+const urlText = "/tours/urmas";
 
 export default urlText;
