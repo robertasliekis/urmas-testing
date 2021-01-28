@@ -71,7 +71,7 @@ function TopicWindow(props) {
                     className="image"
                     alt="urmas"
                     style={{
-                      backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")`,
+                      // backgroundImage: `url("/photos/${topics[props.topicIndex].id}/image${description[2]}.jpg")`,
                       marginBottom: description[1] === `` ? "30px" : "10px"
                     }}
                   ></img>

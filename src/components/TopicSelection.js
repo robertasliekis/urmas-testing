@@ -37,10 +37,6 @@ function TopicSelection(props) {
                 <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
                 <div className="topic-title">{topic.topicTitle}</div>
               </Link>
-              // <div className="topic" key={topic.id} onClick={() => topicClicked(index)}>
-              //   <div className="topic-number">{`${index + 1}/${topics.length}`}</div>
-              //   <div className="topic-title">{topic.topicTitle}</div>
-              // </div>
             ))}
           </div>
         </div>
@@ -50,8 +46,6 @@ function TopicSelection(props) {
             <div className="icon"></div>
           </Link>
         </div>
-
-        {/* <div className="ref-image" style={{ backgroundImage: `url("./images/ref2.jpg")` }}></div> */}
       </div>
     </div>
   );

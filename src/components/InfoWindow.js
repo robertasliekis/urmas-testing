@@ -4,17 +4,9 @@ import { openInfoWindow } from "../actions";
 import { Link } from "react-router-dom";
 import urlText from "./urlText";
 
-function InfoWindow(props) {
-  const tourStartedClicked = () => {
-    //  props.openInfoWindow(false);
-  };
-
+function InfoWindow() {
   return (
-    <Link
-      className="window-container info-container"
-      to={`${urlText}/`}
-      // style={{ opacity: props.infoWindowOpen ? 1 : 0, zIndex: props.infoWindowOpen ? 5 : 1 }}
-    >
+    <Link className="window-container info-container" to={`${urlText}/`}>
       <div className="content">
         <div className="intro-title">
           <div className="text">
@@ -36,7 +28,6 @@ function InfoWindow(props) {
             <div className="btn btn-right btn-round"></div>
           </div>
         </div>
-        <div className="ref-image" style={{ backgroundImage: `url("./images/ref.jpg")` }}></div>
       </div>
       <div className="btn btn-start">
         <div className="active-zone">
