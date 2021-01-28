@@ -10,8 +10,9 @@ function InfoWindow(props) {
   };
 
   return (
-    <div
+    <Link
       className="window-container info-container"
+      to={`${urlText}/`}
       // style={{ opacity: props.infoWindowOpen ? 1 : 0, zIndex: props.infoWindowOpen ? 5 : 1 }}
     >
       <div className="content">
@@ -37,12 +38,12 @@ function InfoWindow(props) {
         </div>
         <div className="ref-image" style={{ backgroundImage: `url("./images/ref.jpg")` }}></div>
       </div>
-      <Link className="btn btn-start" onClick={() => tourStartedClicked()} to={`${urlText}/`}>
+      <div className="btn btn-start">
         <div className="active-zone">
           tap to start <div className="line"></div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 

@@ -1,4 +1,4 @@
-const urlText = "/tours/urmas";
-//const urlText = "";
+//const urlText = "/tours/urmas";
+const urlText = "";
 
 export default urlText;
